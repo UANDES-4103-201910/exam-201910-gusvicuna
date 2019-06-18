@@ -1,7 +1,13 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <%= link_to "Z-Mobile", root_path, class:"navbar-brand"%>
-  <div class="row">
+  <div>
+    <%= link_to "Z-Mobile", root_path, class:"navbar-brand"%>
   </div>
-  <div class="img-with-text">
-  </div>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <%= link_to "Sign In", new_user_session_path, class: "nav-link" %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+    </li>
+  </ul>
 </nav>
