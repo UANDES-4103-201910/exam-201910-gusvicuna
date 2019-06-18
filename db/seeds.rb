@@ -23,3 +23,9 @@ a2 = Address.create(phone: "+56982607830", line1: "San Carlos de Apoquindo 857",
 a3 = Address.create(phone: "+56912345678", line1: "Estoril 1130", line2: "Dpto. 302", city: "Santiago", country: "Chile", zip_code: 7550000, user: u2)
 
 #Orders
+o1= Order.create(user: u1, b_address: a1, s_address: a2)
+o2= Order.create(user: u1, b_address: a1, s_address: a2)
+o3= Order.create(user: u2, b_address: a3, s_address: a3)
+
+#Product_orders
+ProductOrder.create([{order: o1, product: p1}, {order: o1, product: p3}, {order: o2, product: p2}, {order: o2, product: p4}, {order: o3, product: p5}, {order: o3, product:p5}])
