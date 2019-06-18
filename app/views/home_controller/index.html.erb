@@ -1,0 +1,21 @@
+<%= render 'layouts/header' %>
+<p id="notice" class="center"><%= notice %></p>
+<div class="row">
+  <%= render 'layouts/sec_nav' %>
+  <div class="container">
+    <div class="tab-content">
+      <div class="tab-pane container active" id="handset">
+        <% products=Product.where(type_p: "handset") %>
+        <%= render products %>
+      </div>
+      <div class="tab-pane container fade" id="prepay">
+        <% products=Product.where(type_p: "pre-pay") %>
+        <%= render products %>
+      </div>
+      <div class="tab-pane container fade" id="subscription">
+        <% products=Product.where(type_p: "subsciption") %>
+        <%= render products %>
+      </div>
+    </div>
+  </div>
+</div>

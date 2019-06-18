@@ -1,0 +1,9 @@
+<ul class="nav-bar flex-column bg-dark navbar-dark">
+  <h2 class="navbar-brand">Our brands:</h2>
+  <% brands=Product.first.all_brands %>
+  <% brands.each do |b| %>
+    <li class="nav-link">
+      <%= link_to b, "#", class: "nav-link" %>
+    </li>
+  <% end %>
+</ul>

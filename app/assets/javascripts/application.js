@@ -14,3 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$('.nav-tabs').click(function(){
+    $(this).tab('show');
+})
